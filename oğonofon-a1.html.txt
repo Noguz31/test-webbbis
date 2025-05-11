@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ogonofon A1 - Simülasyon</title>
+  <style>
+    body {
+      background: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .phone {
+      width: 300px;
+      height: 600px;
+      background: #000;
+      border-radius: 30px;
+      border: 5px solid #555;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 30px #000;
+    }
+
+    .screen {
+      background: linear-gradient(to bottom, #111, #222);
+      color: white;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .status-bar {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .apps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .app {
+      background: #444;
+      border-radius: 15px;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .app:hover {
+      background: #666;
+    }
+
+    .app-icon {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="phone">
+    <div class="screen">
+      <div class="status-bar">Ogonofon A1 | 11 Mayıs 2025</div>
+      <div class="apps">
+        <div class="app" onclick="alert('Telefon açılıyor...')">
+          <div class="app-icon">📞</div>
+          <div>Telefon</div>
+        </div>
+        <div class="app" onclick="alert('Mesajlar açılıyor...')">
+          <div class="app-icon">💬</div>
+          <div>Mesajlar</div>
+        </div>
+        <div class="app" onclick="alert('Kamera açılıyor...')">
+          <div class="app-icon">📷</div>
+          <div>Kamera</div>
+        </div>
+        <div class="app" onclick="alert('Müzik çalar...')">
+          <div class="app-icon">🎵</div>
+          <div>Müzik</div>
+        </div>
+        <div class="app" onclick="alert('
